@@ -2,8 +2,8 @@ import './App.css'
 // allego il foglio di bootstrap una volta per tutte
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ResponsiveNavbar from './components/ResponsiveNavbar'
-import MainCarouselContent from './components/MainCarouselContent'
 import { Col, Container, Row } from 'react-bootstrap'
+import MainContent from './components/MainContent'
 function App() {
   return (
     <div className="App">
@@ -12,9 +12,9 @@ function App() {
       </header>
       <main>
         <Container>
-          <Row>
+          <Row className="justify-content-center mt-3">
             <Col xs={12} md={8} lg={6}>
-              <MainCarouselContent />
+              <MainContent />
             </Col>
           </Row>
         </Container>
